@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  price: 1
+  name: MyString
+  available: false
+  department: one
+
+two:
+  price: 1
+  name: MyString
+  available: false
+  department: two
