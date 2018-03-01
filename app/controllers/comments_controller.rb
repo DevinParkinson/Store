@@ -7,6 +7,7 @@ class CommentsController < ApplicationController
 
   def create
     @comment = @item.comments.new(comment_params)
+
     if @comment.save
       redirect_to department_item_path(@item.department_id, @item)
     else
@@ -15,6 +16,7 @@ class CommentsController < ApplicationController
   end
 
   private
+
     def set_item
       @item = Item.find(params[:item_id])
     end
